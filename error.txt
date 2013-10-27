@@ -1,0 +1,348 @@
+FFFFFFFFFFFF
+
+Failures:
+
+  1) PagesController GET 'home' returns http success
+     Failure/Error: get 'home'
+     ActionView::Template::Error:
+       undefined local variable or method `about_path' for #<#<Class:0x42bffd0>:0x42beb00>
+     # ./app/views/layouts/_footer.html.erb:4:in `_app_views_layouts__footer_html_erb___186679705_34679112'
+     # ./app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__481832793_31090716'
+     # ./spec/controllers/pages_controller_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  2) PagesController GET 'home' should have the right title
+     Failure/Error: get 'home'
+     ActionView::Template::Error:
+       undefined local variable or method `about_path' for #<#<Class:0x42bffd0>:0x428dab0>
+     # ./app/views/layouts/_footer.html.erb:4:in `_app_views_layouts__footer_html_erb___186679705_34679112'
+     # ./app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__481832793_31090716'
+     # ./spec/controllers/pages_controller_spec.rb:13:in `block (3 levels) in <top (required)>'
+
+  3) PagesController GET 'home' should have a non-blank body
+     Failure/Error: get 'home'
+     ActionView::Template::Error:
+       undefined local variable or method `about_path' for #<#<Class:0x42bffd0>:0x42c2ac0>
+     # ./app/views/layouts/_footer.html.erb:4:in `_app_views_layouts__footer_html_erb___186679705_34679112'
+     # ./app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__481832793_31090716'
+     # ./spec/controllers/pages_controller_spec.rb:19:in `block (3 levels) in <top (required)>'
+
+  4) PagesController GET 'contact' returns http success
+     Failure/Error: get 'contact'
+     ActionView::Template::Error:
+       undefined local variable or method `about_path' for #<#<Class:0x42bffd0>:0x41ce008>
+     # ./app/views/layouts/_footer.html.erb:4:in `_app_views_layouts__footer_html_erb___186679705_34679112'
+     # ./app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__481832793_31090716'
+     # ./spec/controllers/pages_controller_spec.rb:27:in `block (3 levels) in <top (required)>'
+
+  5) PagesController GET 'contact' should have the right title
+     Failure/Error: get 'contact'
+     ActionView::Template::Error:
+       undefined local variable or method `about_path' for #<#<Class:0x42bffd0>:0x426a170>
+     # ./app/views/layouts/_footer.html.erb:4:in `_app_views_layouts__footer_html_erb___186679705_34679112'
+     # ./app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__481832793_31090716'
+     # ./spec/controllers/pages_controller_spec.rb:32:in `block (3 levels) in <top (required)>'
+
+  6) PagesController GET 'about' returns http success
+     Failure/Error: get 'about'
+     ActionView::Template::Error:
+       undefined local variable or method `about_path' for #<#<Class:0x42bffd0>:0x42ae690>
+     # ./app/views/layouts/_footer.html.erb:4:in `_app_views_layouts__footer_html_erb___186679705_34679112'
+     # ./app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__481832793_31090716'
+     # ./spec/controllers/pages_controller_spec.rb:39:in `block (3 levels) in <top (required)>'
+
+  7) PagesController GET 'about' should have the right title
+     Failure/Error: get 'about'
+     ActionView::Template::Error:
+       undefined local variable or method `about_path' for #<#<Class:0x42bffd0>:0x42de828>
+     # ./app/views/layouts/_footer.html.erb:4:in `_app_views_layouts__footer_html_erb___186679705_34679112'
+     # ./app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__481832793_31090716'
+     # ./spec/controllers/pages_controller_spec.rb:44:in `block (3 levels) in <top (required)>'
+
+  8) PagesController GET 'help' returns http success
+     Failure/Error: get 'help'
+     AbstractController::ActionNotFound:
+       The action 'help' could not be found for PagesController
+     # ./spec/controllers/pages_controller_spec.rb:53:in `block (3 levels) in <top (required)>'
+
+  9) PagesController GET 'help' should have the right title
+     Failure/Error: get 'help'
+     AbstractController::ActionNotFound:
+       The action 'help' could not be found for PagesController
+     # ./spec/controllers/pages_controller_spec.rb:58:in `block (3 levels) in <top (required)>'
+
+  10) LayoutLinks should have a Home page at '/'
+     Failure/Error: response.should have_selector('title',:content => "Home")
+       expected following output to contain a <title>Home</title> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <title>Ruby on Rails: Welcome aboard</title>
+       <style type="text/css" media="screen">
+             body {
+               margin: 0;
+               margin-bottom: 25px;
+               padding: 0;
+               background-color: #f0f0f0;
+               font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
+               font-size: 13px;
+               color: #333;
+             }
+       
+             h1 {
+               font-size: 28px;
+               color: #000;
+             }
+       
+             a  {color: #03c}
+             a:hover {
+               background-color: #03c;
+               color: white;
+               text-decoration: none;
+             }
+       
+       
+             #page {
+               background-color: #f0f0f0;
+               width: 750px;
+               margin: 0;
+               margin-left: auto;
+               margin-right: auto;
+             }
+       
+             #content {
+               float: left;
+               background-color: white;
+               border: 3px solid #aaa;
+               border-top: none;
+               padding: 25px;
+               width: 500px;
+             }
+       
+             #sidebar {
+               float: right;
+               width: 175px;
+             }
+       
+             #footer {
+               clear: both;
+             }
+       
+             #header, #about, #getting-started {
+               padding-left: 75px;
+               padding-right: 30px;
+             }
+       
+       
+             #header {
+               background-image: url("assets/rails.png");
+               background-repeat: no-repeat;
+               background-position: top left;
+               height: 64px;
+             }
+             #header h1, #header h2 {margin: 0}
+             #header h2 {
+               color: #888;
+               font-weight: normal;
+               font-size: 16px;
+             }
+       
+       
+             #about h3 {
+               margin: 0;
+               margin-bottom: 10px;
+               font-size: 14px;
+             }
+       
+             #about-content {
+               background-color: #ffd;
+               border: 1px solid #fc0;
+               margin-left: -55px;
+               margin-right: -10px;
+             }
+             #about-content table {
+               margin-top: 10px;
+               margin-bottom: 10px;
+               font-size: 11px;
+               border-collapse: collapse;
+             }
+             #about-content td {
+               padding: 10px;
+               padding-top: 3px;
+               padding-bottom: 3px;
+             }
+             #about-content td.name  {color: #555}
+             #about-content td.value {color: #000}
+       
+             #about-content ul {
+               padding: 0;
+               list-style-type: none;
+             }
+       
+             #about-content.failure {
+               background-color: #fcc;
+               border: 1px solid #f00;
+             }
+             #about-content.failure p {
+               margin: 0;
+               padding: 10px;
+             }
+       
+       
+             #getting-started {
+               border-top: 1px solid #ccc;
+               margin-top: 25px;
+               padding-top: 15px;
+             }
+             #getting-started h1 {
+               margin: 0;
+               font-size: 20px;
+             }
+             #getting-started h2 {
+               margin: 0;
+               font-size: 14px;
+               font-weight: normal;
+               color: #333;
+               margin-bottom: 25px;
+             }
+             #getting-started ol {
+               margin-left: 0;
+               padding-left: 0;
+             }
+             #getting-started li {
+               font-size: 18px;
+               color: #888;
+               margin-bottom: 25px;
+             }
+             #getting-started li h2 {
+               margin: 0;
+               font-weight: normal;
+               font-size: 18px;
+               color: #333;
+             }
+             #getting-started li p {
+               color: #555;
+               font-size: 13px;
+             }
+       
+       
+             #sidebar ul {
+               margin-left: 0;
+               padding-left: 0;
+             }
+             #sidebar ul h3 {
+               margin-top: 25px;
+               font-size: 16px;
+               padding-bottom: 10px;
+               border-bottom: 1px solid #ccc;
+             }
+             #sidebar li {
+               list-style-type: none;
+             }
+             #sidebar ul.links li {
+               margin-bottom: 5px;
+             }
+       
+             .filename {
+               font-style: italic;
+             }
+           </style>
+       <script type="text/javascript">
+             function about() {
+               info = document.getElementById('about-content');
+               if (window.XMLHttpRequest)
+                 { xhr = new XMLHttpRequest(); }
+               else
+                 { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
+               xhr.open("GET","rails/info/properties",false);
+               xhr.send("");
+               info.innerHTML = xhr.responseText;
+               info.style.display = 'block'
+             }
+           </script>
+       </head>
+       <body>
+           <div id="page">
+             <div id="sidebar">
+               <ul id="sidebar-items">
+       <li>
+                   <h3>Browse the documentation</h3>
+                   <ul class="links">
+       <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
+                     <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
+                     <li><a href="http://www.ruby-doc.org/core/">Ruby core</a></li>
+                     <li><a href="http://www.ruby-doc.org/stdlib/">Ruby standard library</a></li>
+                   </ul>
+       </li>
+               </ul>
+       </div>
+       
+             <div id="content">
+               <div id="header">
+                 <h1>Welcome aboard</h1>
+                 <h2>You&rsquo;re riding Ruby on Rails!</h2>
+               </div>
+       
+               <div id="about">
+                 <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
+                 <div id="about-content" style="display: none"></div>
+               </div>
+       
+               <div id="getting-started">
+                 <h1>Getting started</h1>
+                 <h2>Here&rsquo;s how to get rolling:</h2>
+       
+                 <ol>
+       <li>
+                     <h2>Use <code>rails generate</code> to create your models and controllers</h2>
+                     <p>To see all available options, run it without parameters.</p>
+                   </li>
+       
+                   <li>
+                     <h2>Set up a default route and remove <span class="filename">public/index.html</span>
+       </h2>
+                     <p>Routes are set up in <span class="filename">config/routes.rb</span>.</p>
+                   </li>
+       
+                   <li>
+                     <h2>Create your database</h2>
+                     <p>Run <code>rake db:create</code> to create your database. If you're not using SQLite (the default), edit <span class="filename">config/database.yml</span> with your username and password.</p>
+                   </li>
+                 </ol>
+       </div>
+             </div>
+       
+             <div id="footer">&nbsp;</div>
+           </div>
+         </body>
+       </html>
+     # ./spec/requests/layout_links_spec.rb:6:in `block (2 levels) in <top (required)>'
+
+  11) LayoutLinks should have a Contact page at '/contact'
+     Failure/Error: get '/contact'
+     ActionController::RoutingError:
+       No route matches [GET] "/contact"
+     # ./spec/requests/layout_links_spec.rb:10:in `block (2 levels) in <top (required)>'
+
+  12) LayoutLinks should have an About page at '/about'
+     Failure/Error: get '/about'
+     ActionController::RoutingError:
+       No route matches [GET] "/about"
+     # ./spec/requests/layout_links_spec.rb:16:in `block (2 levels) in <top (required)>'
+
+Finished in 0.41302 seconds
+12 examples, 12 failures
+
+Failed examples:
+
+rspec ./spec/controllers/pages_controller_spec.rb:7 # PagesController GET 'home' returns http success
+rspec ./spec/controllers/pages_controller_spec.rb:12 # PagesController GET 'home' should have the right title
+rspec ./spec/controllers/pages_controller_spec.rb:18 # PagesController GET 'home' should have a non-blank body
+rspec ./spec/controllers/pages_controller_spec.rb:26 # PagesController GET 'contact' returns http success
+rspec ./spec/controllers/pages_controller_spec.rb:31 # PagesController GET 'contact' should have the right title
+rspec ./spec/controllers/pages_controller_spec.rb:38 # PagesController GET 'about' returns http success
+rspec ./spec/controllers/pages_controller_spec.rb:43 # PagesController GET 'about' should have the right title
+rspec ./spec/controllers/pages_controller_spec.rb:52 # PagesController GET 'help' returns http success
+rspec ./spec/controllers/pages_controller_spec.rb:57 # PagesController GET 'help' should have the right title
+rspec ./spec/requests/layout_links_spec.rb:4 # LayoutLinks should have a Home page at '/'
+rspec ./spec/requests/layout_links_spec.rb:9 # LayoutLinks should have a Contact page at '/contact'
+rspec ./spec/requests/layout_links_spec.rb:15 # LayoutLinks should have an About page at '/about'
