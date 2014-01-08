@@ -6,7 +6,7 @@ module ApplicationHelper
   base_title = "Microblogging App"
    if @title.nil?
      base_title
-	else
+	# else
 	 "#{base_title} | #{@title}"
 	 end
 	 end

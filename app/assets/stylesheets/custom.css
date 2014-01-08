@@ -1,6 +1,8 @@
+
+
 .container{
 
-width: 810px;
+width: 710px;
 padding-left:30px;
 }
 
@@ -12,15 +14,19 @@ margin:1em;
 }
 
 header{
- padding-top: 20px;
+ margin-top: 30px;
+ padding-top: 30px;
  padding-left: 20px;
+ 
 
 }
 
 header img {
+
 padding: 1em;
 background: #fff;
-margin-left:-1.1em;
+position: relative;
+//margin-left:-1.1em;
 }
 
 section{
@@ -125,8 +131,7 @@ margin-left:-0.4em;
  float:none;
  }
  
- 
- 
+
  
  
  
