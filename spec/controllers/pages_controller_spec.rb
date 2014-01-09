@@ -5,7 +5,7 @@ describe PagesController do
  
  
  before(:each) do
-  @base_title = "Khemks App"
+  @base_title = "Khems App"
  end
 
   describe "GET 'home'" do
