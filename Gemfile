@@ -5,10 +5,10 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-
 group :production do
-  gem 'pg'
-end        
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
 
 group :development, :test do
   gem 'sqlite3'
@@ -26,7 +26,6 @@ end
 
 gem 'jquery-rails'
 
-gem 'rails_12factor', group: :production
 
 gem 'webrat'
 
