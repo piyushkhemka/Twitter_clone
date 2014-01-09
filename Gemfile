@@ -26,6 +26,7 @@ end
 
 gem 'jquery-rails'
 
+gem 'rake', '10.1.1'
 
 gem 'webrat'
 
